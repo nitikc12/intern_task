@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>30DaysOfScript:Inline Script</title>
+  </head>
+  <body>
+    <!-- <button onclick="alert('Welcome to 30DaysOfJavaScript!')">Click Me</button> -->
+    <script>
+      const throwErrorExampleFun = () => {
+        let message;
+        let x = prompt("Enter a number:");
+        try {
+          if (x == "") throw "empty";
+          if (isNaN(x)) throw "not a number";
+          x = Number(x);
+          if (x < 5) throw "too low";
+          if (x > 10) throw "too high";
+        } catch (err) {
+          console.log(err);
+        }
+      };
+      throwErrorExampleFun();
+
+      // let userInput;
+      // while (userInput !== "exit") userInput = prompt("Enter a command");
+      // console.log(`you entered ${userInput}`);
+
+      // console.log("%c30 Days Of JavaScript", "color:green"); // log output is green
+      // console.log(
+      //   "%c30 Days%c %cOf%c %cJavaScript%c",
+      //   "color:green",
+      //   "",
+      //   "color:red",
+      //   "",
+      //   "color:yellow"
+      // );
+
+      // console.warn("This is a warning");
+      // console.error("error");
+
+      // const names = ["nitee", "brook", "david"];
+      // console.table(names);
+
+      // const user = {
+      //   name: "Asabeneh",
+      //   title: "Programmer",
+      //   country: "Finland",
+      //   city: "Helsinki",
+      //   age: 250,
+      // };
+      // console.table(user);
+
+      // const countries = [
+      //   ["Finland", "Helsinki"],
+      //   ["Sweden", "Stockholm"],
+      //   ["Norway", "Oslo"],
+      // ];
+      // console.table(countries);
+
+      // const users = [
+      //   {
+      //     name: "Asabeneh",
+      //     title: "Programmer",
+      //     country: "Finland",
+      //     city: "Helsinki",
+      //     age: 250,
+      //   },
+      //   {
+      //     name: "Eyob",
+      //     title: "Teacher",
+      //     country: "Sweden",
+      //     city: "London",
+      //     age: 25,
+      //   },
+      //   {
+      //     name: "Asab",
+      //     title: "Instructor",
+      //     country: "Norway",
+      //     city: "Oslo",
+      //     age: 22,
+      //   },
+      //   {
+      //     name: "Matias",
+      //     title: "Developer",
+      //     country: "Denmark",
+      //     city: "Copenhagen",
+      //     age: 28,
+      //   },
+      // ];
+      // console.table(users);
+
+      // console.assert(2 > 3, "4 is greater than 3");
+      // console.assert(3 > 4, "3 is not greater than 4");
+
+      // for (let i = 0; i <= 10; i = i + 1) {
+      //   let errorMessage = `${i} is not even `;
+      //   console.log("the # is" + 1);
+      //   console.assert(i % 2 === 0, { number: i, errorMessage: errorMessage });
+      // }
+
+      // let userInput = "";
+      // while (userInput !== "exit") {
+      //   userInput = prompt("Enter a command(type exit to quit)");
+      //   console.log("You entered", userInput);
+      // }
+
+      // const correctPassword = "secret";
+      // let userInput = "";
+
+      // while (userInput !== correctPassword) {
+      //   userInput = prompt("Enter a pass");
+      //   if (userInput !== correctPassword) {
+      //     console.log("Incorrect password try again");
+      //   } else {
+      //     console.log("password accepted");
+      //   }
+      // }
+      // console.log("wrong");
+
+      // while (running) {
+      //   if (someCondition) {
+      //     userInput = prompt('Enter a command (type "exit" to quit):');
+      //     running = false;
+      //   }
+      // }
+
+      // const countries = [
+      //   ["Finland", "Helsinki"],
+      //   ["Sweden", "Stockholm"],
+      //   ["Norway", "Oslo"],
+      // ];
+
+      // console.time("Regular for loop");
+      // for (let i = 0; i < countries.length; i++) {
+      //   console.log(countries[i][0], countries[i][1]);
+      // }
+      // console.timeEnd("Regular for loop");
+
+      // console.time("for of loop");
+      // for (const [name, city] of countries) {
+      //   console.log(name, city);
+      // }
+      // console.timeEnd("for of loop");
+
+      // console.time("forEach loop");
+      // countries.forEach(([name, city]) => {
+      //   console.log(name, city);
+      // });
+      // console.timeEnd("forEach loop");
+
+      // console.info("30 Days Of JavaScript challenge is trending on Github");
+      // console.info("30 Days Of fullStack challenge might be released");
+      // console.info("30 Days Of HTML and CSS challenge might be released");
+
+      // const countries = [
+      //   ["Finland", "Helinski"][("Sweden", "Stockholm")][("Norway", "Oslo")],
+      // ];
+      // console.time("Regular for loop");
+      // for (let i = 0; i < countries.length; i++) {
+      //   console.log(countries[i][0], countries[i][1]);
+      // }
+      // console.timeEnd("Regular for loop");
+
+      // console.time("loopTime"); // Start the timer with label 'loopTime'
+
+      // for (let i = 0; i < 1000000; i++) {
+      //   // Simulate some work
+      // }
+
+      // console.timeEnd("loopTime");
+      // console.log("Welcome to 30DaysOfJavaScript");
+
+      // let person = prompt("Please enter your name", "Harry Potter");
+
+      // if (person != null) {
+      //   console.log("Hello " + person + "! How are you today?");
+      // }
+
+      // const agree = confirm("Are you sure you like to delete? ");
+      // console.log(agree);
+    </script>
+    <!-- <script src="./helloworld.js"></script>
+    <script src="./variable.js"></script>
+    <script src="./datatypes.js"></script> -->
+    <!-- <script src="./day7.js"></script> -->
+  </body>
+</html>

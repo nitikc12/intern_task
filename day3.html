@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./day3.js"></script>
+
+    <button onclick="myFunction()">Try it</button>
+    <script>
+      //Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
+      // const y2 = 2;
+      // const y1 = 2;
+      // const x2 = 6;
+      // const x1 = 10;
+
+      // m = (y2 - y1) * (x2 - x1);
+      // console.log(m);
+
+      //   const slope = 2;
+      //   const yIntercept = -2;
+
+      //   const xIntercept = -yIntercept / slope;
+      //   console.log(slope);
+      //   console.log(xIntercept);
+
+      /*let script = prompt("Enter height");
+
+
+
+
+            let script1 = prompt("Enter base");
+            let script2 = prompt("Enter side c");
+            perimeter = (script2 + script1 + script) / 2;
+            //   if ((area = script1 * script2)) {
+            console.log(" The" + "sum of traingle is" + perimeter);
+            //   }*/
+
+      //   let name = prompt("Enter a name");
+      //   if (name.length > 7) {
+      //     console.log("You name is long");
+      //   } else {
+      //     console.log("your name is short");
+      //   }
+
+      //   let firstName1 = prompt("Enter a name");
+      //   let lastName1 = prompt("Enter lastname");
+      //   if (firstName.length > lastName.length) {
+      //     console.log("you name is longer");
+      //   } else {
+      //     console.log("its fine");
+      //   }
+
+      //   let myAge = prompt("enter number");
+      //   let yourAge = prompt("enter another number");
+
+      //   let ageDifference = myAge - yourAge;
+
+      //   // Log the result
+      //   console.log("I am " + ageDifference + " years older than you.");
+
+      //   let birth_year = prompt("enter a number");
+      //   let current_year = prompt("enter a number");
+      //   age = current_year - birth_year;
+      //   if (age > 18) {
+      //     console.log("youre allowed");
+      //   } else {
+      //     console.log("not allowed");
+      //   }
+
+      //   let age_year = prompt("enter a number");
+
+      //   const now = new age();
+      //   console.log(now.getTime());
+
+      // let myAge1 = prompt("Enter age");
+      // let yourAge1 = prompt("Enter another age");
+      // if (myAge1 > yourAge) {
+      //   console.log("I am older");
+      // } else if (yourAge1 > myAge1) {
+      //   console.log("You are older");
+      // } else {
+      //   console.log("valid");
+      // }
+
+      // let grades = prompt("Enter a score ");
+      // function students(score) {
+      //   if (score >= 80 && score <= 100) {
+      //     return "A";
+      //   } else if (score >= 70 && score <= 89) {
+      //     return "B";
+      //   } else if (score >= 60 && score <= 69) {
+      //     return "C";
+      //   } else if (score >= 50 && score <= 59) {
+      //     return "D";
+      //   } else if (score >= 0 && score <= 49) {
+      //     return "F";
+      //   } else {
+      //     return "invalid";
+      //   }
+      // }
+      // console.log(students(80));
+
+      let season = prompt("Enter a month");
+      let check = season.charAt(0).toUpperCase();
+      let check2 = season.slice(1, season.length).toLowerCase();
+
+      let month = check + check2;
+      if (
+        "September" === month ||
+        "October" === month ||
+        "November" === month
+      ) {
+        console.log(`${month} is autumn`);
+      } else if ("March" === month || "April" === month || "May" === month) {
+        console.log(`${month} is spring`);
+      } else if ("June" === month || "July" === month || "August" === month) {
+        console.log(`${month} is spring`);
+      } else if (
+        "December" === month ||
+        "January" === month ||
+        "February" === month
+      ) {
+        console.log(`${month} is winter`);
+      } else {
+        console.log("invalid");
+      }
+
+      // let a = prompt("Enter a month");
+
+      // let b = a.charAt(0).toUpperCase();
+
+      // let c = a.slice(1, a.length).toLowerCase();
+
+      // let Month = b + c;
+      // if (
+      //   "January" === Month ||
+      //   "March" === Month ||
+      //   "May" === Month ||
+      //   "July" === Month ||
+      //   "Agust" === Month ||
+      //   "October" === Month ||
+      //   "December" === Month
+      // ) {
+      //   console.log(`${Month} has 31 days`);
+      // } else if ("February" === Month) {
+      //   console.log(`${Month} has 28 days`);
+      // } else if (
+      //   "April" === Month ||
+      //   "June" === Month ||
+      //   "September" === Month ||
+      //   "November" === Month
+      // ) {
+      //   console.log(`${Month} has 30 days`);
+      // } else {
+      //   console.log("invalid");
+      // }
+    </script>
+  </body>
+</html>
