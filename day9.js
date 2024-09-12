@@ -458,46 +458,46 @@
 // );
 // console.log(countriesContainingLand);
 
-const countries = [
-  "Argentina",
-  "Australia",
-  "Brazil",
-  "Belgium",
-  "Canada",
-  "China",
-  "Denmark",
-  "Egypt",
-  "France",
-  "Germany",
-  "Greece",
-  "Honduras",
-  "India",
-  "Japan",
-  "Kenya",
-  "Latvia",
-  "Mexico",
-  "Nigeria",
-  "Oman",
-  "Poland",
-  "Qatar",
-  "Russia",
-  "Spain",
-  "Turkey",
-  "Ukraine",
-  "Vietnam",
-  "Yemen",
-  "Zimbabwe",
-];
-const nation = countries.map((country) => country.toUpperCase().slice(0, 3));
-console.log(nation);
+// const countries = [
+//   "Argentina",
+//   "Australia",
+//   "Brazil",
+//   "Belgium",
+//   "Canada",
+//   "China",
+//   "Denmark",
+//   "Egypt",
+//   "France",
+//   "Germany",
+//   "Greece",
+//   "Honduras",
+//   "India",
+//   "Japan",
+//   "Kenya",
+//   "Latvia",
+//   "Mexico",
+//   "Nigeria",
+//   "Oman",
+//   "Poland",
+//   "Qatar",
+//   "Russia",
+//   "Spain",
+//   "Turkey",
+//   "Ukraine",
+//   "Vietnam",
+//   "Yemen",
+//   "Zimbabwe",
+// ];
+// const nation = countries.map((country) => country.toUpperCase().slice(0, 3));
+// console.log(nation);
 
-const nationMap = nation.map((country, idx) => {
-  return {
-    ...country,
-    // country,
-    code: country.name.slice(0, 3).toUpperCase(),
-  };
-});
+// const nationMap = nation.map((country, idx) => {
+//   return {
+//     ...country,
+//     // country,
+//     code: country.name.slice(0, 3).toUpperCase(),
+//   };
+// });
 
 // console.log(nationMap)
 
@@ -524,3 +524,19 @@ const nationMap = nation.map((country, idx) => {
 // return result;
 
 // console.log(countStartingLetters(countries));
+
+const products = [
+  { product: "banana", price: 3 },
+  { product: "mango", price: 6 },
+  { product: "potato", price: " " },
+  { product: "avocado", price: 8 },
+  { product: "coffee", price: 10 },
+  { product: "tea", price: "" },
+];
+
+const totalPrice = products
+  .map((product) => parseFloat(product.price))
+  .filter((price) => !isNaN(price))
+  .reduce((sum, price) => sum + price, 0);
+
+console.log(totalPrice); // Output: 27
